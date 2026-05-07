@@ -107,7 +107,7 @@
         <!-- End Navbar -->
         <!-- Caption header -->
         <div class="caption-header text-center wow zoomInDown">
-            <h5 class="fw-normal">Welcome</h5>
+            <h5 class="fw-normal">Assalamualaikum Wr.Wb</h5>
             <h1 class="fw-light mb-4">I'm <b class="fg-theme">Muwafiq Agung</b> Prastio</h1>
             <div class="badge">System Support | Web Developper</div>
         </div>
@@ -127,7 +127,6 @@
                     <h1 class="fw-light">Muwafiq Agung Prastio</h1>
                     <h5 class="fg-theme mb-3">System Support | Web Developper</h5>
                     <p class="text-muted">I am a passionate and highly committed professional dedicated to supporting digital transformation initiatives. With experience as a System Support specialist, I possess expertise in handling various critical modules, including Pharmacy, EMR, and Kardex. My ability to manage systems and ensure operational efficiency has contributed to improving service quality and processes within the healthcare sector.
-
 In addition, I have strong skills in website development using the Laravel and Vue.js frameworks. I have worked on various projects that have not only strengthened my technical expertise but also helped me continuously grow and adapt to the dynamic world of programming. With a solid understanding of modern technologies and a strong analytical approach, I am ready to make meaningful contributions in a dynamic and innovative work environment.
 </p>
                     <ul class="theme-list">
@@ -136,19 +135,26 @@ In addition, I have strong skills in website development using the Laravel and V
                         <li><b>Age:</b> 25</li>
                         <li><b>Gender:</b> Male</li>
                     </ul>
-                    <button class="btn btn-theme-outline" id="downloadButton">Download CV</button>
-                    <script>
-                        document.getElementById("downloadButton").addEventListener("click", function() {
-                            var fileName = "CVMUWAFIQAGUNGPRASTIO.pdf";
-                            var filePath = "/assets/img/" + fileName;
-                            var link = document.createElement("a");
-                            link.href = filePath;
-                            link.download = fileName;
-                            document.body.appendChild(link);
-                            link.click();
-                            document.body.removeChild(link);
-                        });
-                    </script>
+                    <button class="btn btn-theme-outline" id="downloadButton">
+    Download CV
+</button>
+
+<script>
+document.getElementById("downloadButton").addEventListener("click", function () {
+
+    const fileUrl = "assets/img/CVMUWAFIQAGUNGPRASTIO.pdf";
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute("download", "CVMUWAFIQAGUNGPRASTIO.pdf");
+    link.setAttribute("target", "_blank");
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+});
+</script>
 
 
                 </div>
